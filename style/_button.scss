@@ -1,0 +1,19 @@
+
+@import 'color';
+@import '_media-querie';
+
+
+button{
+    border: none;
+    color:$blue; 
+    &:hover{
+      color: $primary;
+    }
+    @include table {
+      width: 10%;
+    }
+}
+.add-task{
+  background-image: linear-gradient($primary , $sky );
+border: none;
+}

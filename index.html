@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import CSS   -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- import bootstrap  CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules//bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- import Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Task App</title>
+  </head>
+  <body>
+    <div id="contaner" class="contaner bg rounded w-100 text-center pb-5">
+      <header class="header text-center text-light p-5">
+        <h4>Task App</h4>
+         <!-- Search about task -->
+      <div class="mb-3 d-none">
+        <input id="search-input" class="task-search rounded w-25 p-2" type="text" placeholder="Search Task ">
+        <button><i class="fa-solid fa-filter  fa-xl"></i></button>
+    </div> 
+      </header>
+      <!-- add task form -->
+      <div>
+        <form id="todo-form" class="todo-form m-3">
+          <input
+            id="input"
+            class="input rounded-start-pill w-25 p-3 "
+            type="text"
+            placeholder="Add your task to do 👏 "
+          />
+          <button
+          type="submit"
+            id="add-task"
+            class="add-task rounded-end-circle p-3 text-light"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+      </div>
+     
+      <div class="todo w-50" id="todolist"></div>
+      </div>
+    <footer>
+      <!-- show All active and completed tasks -->
+      <ul class="d-flex flex-row justify-content-center">
+        <li class="p-2">
+          <span>Active</span>
+          <span id="active-task" class="result active-task">0</span>
+        </li>
+        <li class="p-2">
+          <span>Completed</span>
+          <span id="Completed-task" class="result Completed-task">0</span>
+        </li>
+        <li class="p-2">
+          <span class="">number of task</span>
+          <span id="total-task" class="result total-task">0</span>
+        </li>
+      </ul>
+    </footer>
+    <script src="index.js"></script>
+    <!-- import bootstrap JS -->
+    <script src="./node_modules//bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
